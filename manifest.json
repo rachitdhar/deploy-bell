@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "DeployBell",
+	"version": "1.0",
+	"permissions": [
+		"activeTab",
+		"tabs",
+		"http://*/*",
+		"https://*/*",
+		"file://*/*"
+		],
+	"description": "Plays a bell audio on mozilla browser",
+
+	"icons": {
+		"48": "icons/bell-icon.png"
+	},
+	"browser_action": {
+		"default_icon": {
+			"48": "icons/bell-icon.png"
+		}
+	},
+	"background": {
+		"scripts": ["playbell.js"],
+		"persistent": false
+	}
+}
